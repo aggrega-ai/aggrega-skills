@@ -55,3 +55,5 @@ Every file in this repository is generated from the skills built into the `aggre
 whose source is [aggrega-ai/aggrega-cli](https://github.com/aggrega-ai/aggrega-cli), and a
 tag here names the Aggrega release the files were generated from. A change to a skill is made
 there; an edit made here is replaced the next time the files are generated.
+
+The skills are released under the same licence as Aggrega's source, in [LICENSE](LICENSE).
