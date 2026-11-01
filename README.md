@@ -47,7 +47,7 @@ assistant's per-user skill folder instead of the current project's. The assistan
 | `zed` | Zed | `.agents/skills` | `~/.agents/skills` |
 
 An assistant that is not listed can still use Aggrega through its MCP server: connect it to
-`aggrega mcp` as [the setup page](https://aggrega.ai/docs/authoring/setup/) describes.
+`aggrega mcp` as [the install page](https://aggrega.ai/docs/install/) describes.
 
 ## Where these files come from
 

@@ -45,7 +45,7 @@ how the pieces fit together. The published documentation is at
 <https://aggrega.ai/docs/>. Start with:
 
 - <https://aggrega.ai/docs/authoring/getting-started/> — the authoring loop, end to end.
-- <https://aggrega.ai/docs/authoring/setup/> — installing the binary and connecting a client.
+- <https://aggrega.ai/docs/install/> — installing the binary and connecting a client.
 - <https://aggrega.ai/docs/authoring/personas/> and
   <https://aggrega.ai/docs/authoring/entities-by-role/> — the four roles and which kinds each
   one writes.
