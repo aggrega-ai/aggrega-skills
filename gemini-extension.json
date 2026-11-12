@@ -1,0 +1,13 @@
+{
+  "name": "aggrega",
+  "version": "1.0.0",
+  "description": "Gives your assistant the aggrega skill and the tools of the aggrega MCP server it connects; the aggrega binary must already be on your PATH.",
+  "mcpServers": {
+    "aggrega": {
+      "command": "aggrega",
+      "args": [
+        "mcp"
+      ]
+    }
+  }
+}

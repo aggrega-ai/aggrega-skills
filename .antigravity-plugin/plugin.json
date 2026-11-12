@@ -1,0 +1,13 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "aggrega",
+  "displayName": "Aggrega",
+  "description": "Gives your assistant the aggrega skill and the tools of the aggrega MCP server it connects; the aggrega binary must already be on your PATH.",
+  "author": {
+    "name": "Aggrega",
+    "url": "https://aggrega.ai"
+  },
+  "homepage": "https://aggrega.ai/docs/ai-assistants/skill/",
+  "repository": "https://github.com/aggrega-ai/aggrega-skills",
+  "license": "Apache-2.0"
+}

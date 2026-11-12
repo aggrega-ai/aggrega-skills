@@ -1,0 +1,15 @@
+{
+  "name": "aggrega",
+  "description": "Gives your assistant the aggrega skill and the tools of the aggrega MCP server it connects; the aggrega binary must already be on your PATH.",
+  "owner": {
+    "name": "Aggrega",
+    "url": "https://aggrega.ai"
+  },
+  "plugins": [
+    {
+      "name": "aggrega",
+      "source": "./",
+      "description": "Gives your assistant the aggrega skill and the tools of the aggrega MCP server it connects; the aggrega binary must already be on your PATH."
+    }
+  ]
+}

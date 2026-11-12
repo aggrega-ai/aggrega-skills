@@ -1,0 +1,20 @@
+{
+  "name": "aggrega",
+  "interface": {
+    "displayName": "Aggrega"
+  },
+  "plugins": [
+    {
+      "name": "aggrega",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

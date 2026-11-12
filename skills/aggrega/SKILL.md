@@ -81,15 +81,21 @@ inside the directory the LOCALAPPDATA environment variable names, and the instal
 that folder to the user `PATH` itself. Run `aggrega version` again to confirm. The manual
 steps, the release page and the signature checks are on the setup page.
 
-To refresh this skill so it matches the installed binary, run
-`aggrega skills install --agent <assistant>`; `aggrega skills install --help` names the
+When this skill came with the Aggrega plugin, it is updated with the plugin. A copy written
+by `aggrega skills install` is refreshed to match the installed binary by running
+`aggrega skills install --agent <assistant>` again; `aggrega skills install --help` names the
 assistants it knows.
 
 ## Connect the MCP server
 
 The server is the `aggrega` command with the single argument `mcp`. The client launches it
 and speaks the protocol over its standard input and output, so there is no port, account or
-separate service. Add it the way your client adds a server:
+separate service.
+
+**When the Aggrega plugin is installed in the assistant, the server is already connected:**
+the plugin starts `aggrega mcp` itself. The plugin does not install the binary, so `aggrega`
+must still be on the `PATH`; if it is not, install it as the previous section describes.
+Otherwise, add the server the way your client adds one:
 
 - **Claude Code:** `claude mcp add --transport stdio aggrega -- aggrega mcp`
 - **Codex:** `codex mcp add aggrega -- aggrega mcp`, or an `[mcp_servers.aggrega]` table in
@@ -116,6 +122,12 @@ The setup page lists where each client keeps its server list. Most clients load 
 server only after a restart or a reload. When the client reports that it cannot find
 `aggrega`, put the absolute path to the binary in `command`. Once connected, call
 `describe-capabilities` to confirm that the tools are there.
+
+Some assistants start a plugin's server in the plugin's own folder rather than in the user's
+project; Codex does. Before working in a project, check which workspace the server answers
+in: `config-show` reports the workspace root in force, and an answer that found no workspace
+names the folder it used instead. If that is not the project, pass the project's folder as
+`workspace_root` on each call that takes it.
 
 ## Start a workspace
 

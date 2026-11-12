@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "aggrega": {
+      "command": "aggrega",
+      "args": [
+        "mcp"
+      ]
+    }
+  }
+}
