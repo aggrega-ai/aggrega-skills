@@ -2,7 +2,7 @@
   "name": "aggrega",
   "description": "Gives your assistant the aggrega skill and the tools of the aggrega MCP server it connects; the aggrega binary must already be on your PATH.",
   "author": {
-    "name": "Aggrega",
+    "name": "Cognitio s.r.l.",
     "url": "https://aggrega.ai"
   },
   "homepage": "https://aggrega.ai/docs/ai-assistants/skill/",
