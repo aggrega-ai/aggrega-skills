@@ -28,7 +28,7 @@ installed. Ask it, and quote what it returns.
 - **When the Aggrega MCP server is connected**, use its tools and resources. Call
   `describe-capabilities` with no arguments first: it lists every tool the server offers,
   what each is for and whether it writes. The tools you will use most are `get-schema`,
-  `scaffold`, `validate`, `build`, `describe`, `search` and `explain-error`. The resources
+  `draft`, `validate`, `build`, `describe`, `search` and `explain-error`. The resources
   carry the reference material: `schema://<kind>` for a kind's JSON Schema,
   `langref://<path>` for a language-reference page such as `langref://entities/component`,
   `authoring://<topic>` for the authoring guide such as `authoring://getting-started`, and
@@ -156,10 +156,10 @@ setting came from; over MCP, the `config-show` tool reports the same.
 2. **Learn its shape from the schema.** `aggrega get-schema --list` names every kind and
    `aggrega get-schema <kind>` prints one schema; over MCP, use the `get-schema` tool or read
    `schema://<kind>`. Read the kind's reference page for what each field means.
-3. **Start from a skeleton.** `aggrega scaffold <kind> [name]` prints a starter document
+3. **Start from a skeleton.** `aggrega draft <kind> [name]` prints a starter document
    carrying exactly the fields the kind requires, with a placeholder for each value still
    owed. It writes nothing, so redirect it into a file:
-   `aggrega scaffold component my-service > my-service.yaml`. Over MCP, use the `scaffold`
+   `aggrega draft component my-service > my-service.yaml`. Over MCP, use the `draft`
    tool.
 4. **Fill in the fields.** Take every field name and value shape from the schema. To reuse
    what a catalog already offers, `aggrega search <query>` finds entities in the local index
@@ -183,7 +183,7 @@ When a command halts, its message names a code. `aggrega explain <code>` — or 
 ## Habits that keep the work correct
 
 - Quote the binary. A field name, a required key or an allowed value you state comes from
-  `get-schema`, `validate` or `scaffold`, not from recollection.
+  `get-schema`, `validate` or `draft`, not from recollection.
 - Keep secrets out of the files. A password or token is supplied by environment variable or
   flag when it is needed, never written into an entity or a configuration file.
 - Per-environment values reach a Release through the parameters its Aggregate exposes. When
